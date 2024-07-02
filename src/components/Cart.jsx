@@ -3,7 +3,7 @@ import { getCartItem, clearCart, updateOrDeleteCartItem } from "../services/apiC
 import { getProducts } from "../services/apiProducts";
 import { addOrderHistory } from "../services/apiHistory"; // New service for adding order history
 import { FaArrowRight, FaTrash } from "react-icons/fa6";
-import { toast, ToastContainer } from "react-toastify";
+import { toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import { getCurrentUser } from "../services/apiAuth";
 import Loader from "./Loader";
@@ -249,7 +249,6 @@ function Cart() {
           </div>
         </div>
       </div>
-      <ToastContainer />
     </div>
   );
 }
